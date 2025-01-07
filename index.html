@@ -21,7 +21,7 @@
             
         }
 
-        img{
+        .img{
             height: 100px;
             padding-top: 40px;
             margin-left: auto;
@@ -40,6 +40,9 @@
         .certificate-content{
             font-family: "Playfair", serif;
             font-size: 20px;
+            margin-top: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
         }
 
         .underline{
@@ -53,16 +56,48 @@
            
             
         }
+
+        .line{
+            border-top: 2px solid black;
+            width: 200px;
+        }
+
+        .certificate-footer{
+            display: flex;
+            justify-content: center;
+        }
+
+        img{
+            height: 50px;
+        }
+
+        .stamp{
+            height: 150px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
       <div class="logo">
-        <img src="./image/logo.png" alt="logo">
+        <img class="img" src="./image/logo.png" alt="logo">
       </div>
       <h1 class="certificate-title">Certificate of Participation</h1>
       <p class="certificate-content">This certificate is proudly awarded to</p>
        <div class="underline"><h1 class="certificate-title">Juhi Karosiya</h1></div>
+       <p class="certificate-content">in recognition of his/her Participation in the Student Innovation and Leadership Development Program held on 07 January 2025</p>
+       <div class="certificate-footer">
+        <div class="signature">
+            <img src="./image/sign.png" alt="signature-1">
+            <div class="line"><p>Program Director</p></div>
+        </div>
+        <div class="stamp">
+            <img class="stamp" src="./image/stamp.png" alt="stamp">
+        </div>
+        <div class="signature">
+            <img src="./image/sign-2.png" alt="signature-2">
+           <div class="line"> <p>Workshop Incharge</p></div>
+        </div>
+       </div>
     </div>
 </body>
 </html>
